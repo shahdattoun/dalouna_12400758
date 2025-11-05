@@ -1,0 +1,238 @@
+/* 
+ css/styles.css 
+ Student Name: Shahd attoun
+ Student Id: 12400758
+*/
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--brand-2);
+}
+
+
+.hero {
+  background-image: url("C:/Users/20Tech/Desktop/dalouna-12400758/images/bg.jpg"); background-size: cover ;background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(0,0,0,0.45);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.tagline{
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand-2);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--brand-2);
+}
+
+/* ===== ABOUT ===== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+}
+
+.about-info, .chef-note {
+  flex: 1 1 300px;
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.tags span {
+  background: var(--brand-2);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ===== MENU ===== */
+.menu {
+  padding: 3rem 2rem;
+}
+
+.menu h2 {
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.menu-card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* ===== HOURS & CONTACT ===== */
+.hours{
+  padding: 3rem 2rem;
+  background: var(--bg);
+}
+.hours-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  
+}
+
+.hours-box, .contact-box {
+  flex: 1 1 300px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: var(--card);
+  
+}
+.hours h3,reserve h3{
+  margin-top:0;
+  margin-bottom: 1rem;
+
+}
+.hours-box ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hours-box li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+.hours-box li:last-child{
+  border-bottom: none;
+}
+
+
+/* ===== FIND US ===== */
+.find-us {
+    background: var(--bg);
+    padding: 3rem 2rem;
+}
+
+.findus-container{
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+
+.findus-text{
+    flex:1 1 300px;
+}
+
+.map-placeholder{
+    flex:1 1 300px;
+    text-align: center;
+}
+.map-placeholder img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+.site-footer a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--brand-2);
+}
